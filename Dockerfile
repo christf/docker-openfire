@@ -1,7 +1,7 @@
 FROM openjdk:8u312-jre-slim
 MAINTAINER miguelwill@gmail.com
 
-ENV OPENFIRE_VERSION=4.6.4 \
+ENV OPENFIRE_VERSION=4.6.7 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
