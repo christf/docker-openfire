@@ -1,4 +1,4 @@
-FROM openjdk:8u292-jre-slim
+FROM openjdk:8u312-jre-slim
 MAINTAINER miguelwill@gmail.com
 
 ENV OPENFIRE_VERSION=4.6.4 \
