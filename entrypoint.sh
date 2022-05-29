@@ -63,7 +63,7 @@ initialize_log_dir
 # default behaviour is to launch openfire
 if [[ -z ${1} ]]; then
   exec start-stop-daemon --start --chuid ${OPENFIRE_USER}:${OPENFIRE_USER} --exec /usr/bin/java -- \
-    -Dlog4j.configurationFile=${OPENFIRE_DATA_DIR}/conf/log4j2.xml \
+    ${JAVA_ARGS} -Dlog4j.configurationFile=${OPENFIRE_DATA_DIR}/conf/log4j2.xml \
     -DopenfireHome=/usr/share/openfire \
     -Dopenfire.lib.dir=/usr/share/openfire/lib \
     -classpath /usr/share/openfire/lib/startup.jar \
