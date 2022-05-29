@@ -69,7 +69,7 @@ if [[ -z ${1} ]]; then
     -classpath /usr/share/openfire/lib/startup.jar \
     -jar /usr/share/openfire/lib/startup.jar ${EXTRA_ARGS}
 else
-  exec "$@"
+  exec $@
 fi
 
 
